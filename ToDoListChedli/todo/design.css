@@ -1,0 +1,147 @@
+/* tiny reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+/* body */
+body {
+  background: #4d244e;
+  font-family: sans-serif;
+  border-top: 5px solid #aa8e8d;
+}
+/* title */
+h1 {
+  color: #aa8e8d;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+/* tasks */
+.tasks {
+  width: 400px;
+  height: 405px;
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="text"] {
+  background: rgba(179, 170, 170, 0.3);
+  filter: brightness(0.5);
+  border: none;
+  outline: none;
+  width: 98%;
+  color: white;
+  font-size: 20px;
+  height: 5vh;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  filter: brightness(1);
+}
+label {
+  background: #ae5f75;
+  height: 69px;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2c3e50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-indent: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+label h2 span {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #fff;
+}
+label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  right: 35px;
+  top: 30%;
+  transition: border 0.7s ease;
+}
+
+label button {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 30%;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  background: url("cancel.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.checked label {
+  background: #6d335c;
+  border-bottom: 1px solid #34495e;
+  color: #d37b79;
+}
+.checked label h2 span {
+  color: #f6bd66;
+}
+
+.checked label:before {
+  background: url("https://i.imgur.com/eoPQ05r.png") no-repeat center center;
+}
+
+form > button {
+  display: none;
+}
+
+#nothing {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.params {
+  padding: 20px;
+  width: 130%;
+}
+.params button {
+  padding: 10px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  background: none;
+  cursor: pointer;
+}
+
+.params button:hover {
+  font-weight: bold;
+  background: #aa8e8d;
+}

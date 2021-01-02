@@ -1,0 +1,45 @@
+footer {
+  color: #777;
+  padding: 15px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer span {
+  float: left;
+}
+
+.footer__clearCompletedButton {
+  background: #fff;
+  border: none;
+  float: right;
+  position: relative;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #777777;
+  font-size: 14px;
+}
+
+.footer__clearCompletedButton:hover {
+  text-decoration: underline;
+}
+
+.footer__filterButton {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin-left: 5px;
+  line-height: 1.4em;
+  font-size: 14px;
+  color: #777777;
+}
+
+.footer__filterButton:hover {
+  border-color: rgba(175, 47, 47, 0.1);
+}
+
+.footer__filterButton:focus {
+  border-color: rgba(175, 47, 47, 0.2);
+}
